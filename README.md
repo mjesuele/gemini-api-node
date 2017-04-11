@@ -20,9 +20,9 @@ key and secret key.
 ```javascript
 import GeminiAPI from 'gemini-api';
 
-const restClient = new GeminiApi({ key, secret, sandbox: false });
+const restClient = new GeminiAPI({ key, secret, sandbox: false });
 const websocketClient =
-  new GeminiApi.WebsocketClient({ key, secret, sandbox: false });
+  new GeminiAPI.WebsocketClient({ key, secret, sandbox: false });
 
 restClient.getOrderBook('btcusd', { limit_asks: 10, limit_bids: 10 })
   .then(console.log)
