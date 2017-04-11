@@ -100,12 +100,3 @@ export default class GeminiAPI {
   getMyAvailableBalances = () =>
     this.requestPrivate(`/balances`)
 }
-
-const restClient =
-  new GeminiAPI({ ...credentials, sandbox: true });
-
-const { getTicker } = restClient;
-getTicker(`btcusd`)
-  .then(data =>
-    console.log(`Last trade: $${data.last}/BTC`)
-  );

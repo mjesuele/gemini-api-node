@@ -109,11 +109,5 @@ class GeminiAPI {
 
   // Fund Management API
 }
-
 exports.default = GeminiAPI;
 GeminiAPI.WebsocketClient = _websocketClient2.default;
-const restClient = new GeminiAPI(_extends({}, _config2.default, { sandbox: true }));
-
-const getTicker = restClient.getTicker;
-
-getTicker(`btcusd`).then(data => console.log(`Last trade: $${data.last}/BTC`));
