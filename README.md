@@ -28,9 +28,11 @@ restClient.getOrderBook('btcusd', { limit_asks: 10, limit_bids: 10 })
   .then(console.log)
   .catch(console.error);
 
-websocketClient.addMarketMessageListener(data =>
-  doSomethingCool(data)
-);
+websocketClient.openMarketSocket('btcusd', () => {
+  websocketClient.addMarketMessageListener(data =>
+    doSomethingCool(data)
+  );
+});
 
 // The methods are bound properly, so feel free to destructure them:
 const { getTicker } = restClient;
