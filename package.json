@@ -1,6 +1,6 @@
 {
   "name": "gemini-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.js client for the Gemini cryptocurrency exchange API.",
   "main": "index.js",
   "scripts": {
