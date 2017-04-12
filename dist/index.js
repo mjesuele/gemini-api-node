@@ -18,10 +18,6 @@ var _createRequestConfig = require('./createRequestConfig');
 
 var _createRequestConfig2 = _interopRequireDefault(_createRequestConfig);
 
-var _config = require('../config');
-
-var _config2 = _interopRequireDefault(_config);
-
 var _get = require('lodash/fp/get');
 
 var _get2 = _interopRequireDefault(_get);

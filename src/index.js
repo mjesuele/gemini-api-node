@@ -1,7 +1,6 @@
 import WebsocketClient from './websocketClient';
 import axios from 'axios';
 import createRequestConfig from './createRequestConfig';
-import credentials from '../config';
 import get from 'lodash/fp/get';
 import shortid from 'shortid';
 
