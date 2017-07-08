@@ -9,6 +9,9 @@
     "dev": "nodemon src/index.js --exec babel-node",
     "test": "ava"
   },
+  "engines": {
+    "node": ">=6"
+  },
   "repository": "http://github.com/mjesuele/gemini-api-node.git",
   "author": "Matthew Jesuele <matt@makeapps.io>",
   "license": "MIT",
