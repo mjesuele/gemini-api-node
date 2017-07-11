@@ -22,7 +22,7 @@ import GeminiAPI from 'gemini-api';
 
 const restClient = new GeminiAPI({ key, secret, sandbox: false });
 const websocketClient =
-  new GeminiAPI.WebsocketClient({ key, secret, sandbox: false });
+  new GeminiAPI.default.WebsocketClient({ key, secret, sandbox: false });
 
 restClient.getOrderBook('btcusd', { limit_asks: 10, limit_bids: 10 })
   .then(console.log)
