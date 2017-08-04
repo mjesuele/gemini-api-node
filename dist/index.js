@@ -88,6 +88,8 @@ class GeminiAPI {
 
     this.getMyAvailableBalances = () => this.requestPrivate(`/balances`);
 
+    this.newAddress = currency => this.requestPrivate(`/deposit/${currency}/newAddress`);
+
     this.key = key;
     this.secret = secret;
     const subdomain = sandbox ? `api.sandbox` : `api`;

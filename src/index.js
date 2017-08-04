@@ -98,4 +98,7 @@ export default class GeminiAPI {
   // Fund Management API
   getMyAvailableBalances = () =>
     this.requestPrivate(`/balances`)
+
+  newAddress = (currency) =>
+    this.requestPrivate(`/deposit/${currency}/newAddress`)
 }

@@ -61,6 +61,7 @@ All methods return promises.
 * getMyPastTrades(params = {})
 * getMyTradeVolume()
 * getMyAvailableBalances()
+* newAddress(currency)
 
 ### WebSocket
 * openMarketSocket(symbol, onOpen)
