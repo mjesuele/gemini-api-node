@@ -149,8 +149,6 @@ export namespace Params {
   }
 
   interface AccountPastTrades {
-    request: string
-    nonce: number
     symbol: string
     limit_trades?: number
     timestamp?: number
