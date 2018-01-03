@@ -9,6 +9,7 @@
     "dev": "nodemon src/index.js --exec babel-node",
     "test": "ava"
   },
+  "typings": "gemini-api.d.ts",
   "engines": {
     "node": ">=6"
   },
