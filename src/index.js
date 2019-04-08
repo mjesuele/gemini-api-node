@@ -101,4 +101,9 @@ export default class GeminiAPI {
 
   newAddress = (currency) =>
     this.requestPrivate(`/deposit/${currency}/newAddress`)
+
+  withdraw = (currency, amount, address) =>
+    this.requestPrivate(`/withdraw/${currency}`, {
+      amount, address
+    })
 }

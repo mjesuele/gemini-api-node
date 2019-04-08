@@ -62,6 +62,7 @@ All methods return promises.
 * getMyTradeVolume()
 * getMyAvailableBalances()
 * newAddress(currency)
+* withdraw(currency, amount, address)
 
 ### WebSocket
 * openMarketSocket(symbol, onOpen)
