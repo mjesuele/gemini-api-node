@@ -1,6 +1,9 @@
 .DS_Store
-node_modules
 .vscode
-config.js
+.eslintignore
+.eslintrc.js
+.env
+node_modules
 src
 test
+tsconfig.json
